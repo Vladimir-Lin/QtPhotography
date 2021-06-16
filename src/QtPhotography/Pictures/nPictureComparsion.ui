@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>nPictureComparsion</class>
+ <widget class="QWidget" name="nPictureComparsion">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>376</width>
+    <height>128</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Picture comparsion</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../Images/Branon.qrc">
+    <normaloff>:/images/pictures.png</normaloff>:/images/pictures.png</iconset>
+  </property>
+  <property name="toolTip">
+   <string>Picture comparsion</string>
+  </property>
+  <property name="statusTip">
+   <string>Picture comparsion</string>
+  </property>
+  <property name="whatsThis">
+   <string>Picture comparsion</string>
+  </property>
+  <widget class="QComboBox" name="Comparsion">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>120</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Comparsion</string>
+   </property>
+   <property name="statusTip">
+    <string>Comparsion</string>
+   </property>
+   <property name="whatsThis">
+    <string>Comparsion</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Algorithm">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>24</y>
+     <width>120</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Algorithm</string>
+   </property>
+   <property name="statusTip">
+    <string>Algorithm</string>
+   </property>
+   <property name="whatsThis">
+    <string>Algorithm</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Result">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>48</y>
+     <width>120</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Result</string>
+   </property>
+   <property name="statusTip">
+    <string>Result</string>
+   </property>
+   <property name="whatsThis">
+    <string>Result</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="First">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>0</y>
+     <width>128</width>
+     <height>128</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>First picture</string>
+   </property>
+   <property name="statusTip">
+    <string>First picture</string>
+   </property>
+   <property name="whatsThis">
+    <string>First picture</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Second">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>0</y>
+     <width>128</width>
+     <height>128</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Second picture</string>
+   </property>
+   <property name="statusTip">
+    <string>Second picture</string>
+   </property>
+   <property name="whatsThis">
+    <string>Second picture</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../Images/Branon.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>Comparsion</sender>
+   <signal>activated(int)</signal>
+   <receiver>nPictureComparsion</receiver>
+   <slot>Options(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>59</x>
+     <y>11</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>187</x>
+     <y>63</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Algorithm</sender>
+   <signal>activated(int)</signal>
+   <receiver>nPictureComparsion</receiver>
+   <slot>Options(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>59</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>187</x>
+     <y>63</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

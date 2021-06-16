@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GalleryOperator</class>
+ <widget class="QDialog" name="GalleryOperator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>192</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Galleries operation</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../Images/Branon.qrc">
+    <normaloff>:/images/galleries.png</normaloff>:/images/galleries.png</iconset>
+  </property>
+  <property name="toolTip">
+   <string>Galleries operation</string>
+  </property>
+  <property name="statusTip">
+   <string>Galleries operation</string>
+  </property>
+  <property name="whatsThis">
+   <string>Galleries operation</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>140</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Source">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>360</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Source gallery</string>
+   </property>
+   <property name="statusTip">
+    <string>Source gallery</string>
+   </property>
+   <property name="whatsThis">
+    <string>Source gallery</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <property name="maxVisibleItems">
+    <number>20</number>
+   </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::NoInsert</enum>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Operator">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>360</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Operator</string>
+   </property>
+   <property name="statusTip">
+    <string>Operator</string>
+   </property>
+   <property name="whatsThis">
+    <string>Operator</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::NoInsert</enum>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Target">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>360</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Target gallery</string>
+   </property>
+   <property name="statusTip">
+    <string>Target gallery</string>
+   </property>
+   <property name="whatsThis">
+    <string>Target gallery</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <property name="maxVisibleItems">
+    <number>20</number>
+   </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::NoInsert</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../Images/Branon.qrc"/>
+  <include location="../../Images/Branon.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>GalleryOperator</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>GalleryOperator</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
